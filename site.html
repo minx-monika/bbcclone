@@ -1,0 +1,650 @@
+<html>
+   <head>
+    <title>MONIKA NEWS</title>
+    <style type="text/css">
+        a:visited {
+       color:white;
+       background-color: transparent;
+       text-decoration: none;
+        }
+        #topbar{
+            width: 1500px;
+            margin: 0 auto;
+            height: 80px;
+            background-color: black;
+        }
+        body{
+            margin: 0 auto;
+            padding: 0;
+            font-family: ReithSans,Arial,Helvetica,freesans,sans-serif;
+        }
+        #logo{
+            height:80px;
+            float:left;
+            margin-right: 10px;
+            margin-left: 100px;
+        }
+        .topbarsection{
+            float: left;
+            border-left: 1px grey solid;
+            height: 60%;
+
+        }
+        #signinlogo{
+            height: 40px;
+            width: 35px;
+            margin-top: 20px;
+            margin-left: 30px;
+            margin-right: 100px;
+            float: left;
+        }
+
+        .topbartext{
+            color:white;
+            font-weight: bold;
+            font-size: large;
+            float: left;
+           padding-top: 30px;
+           padding-left: 30px;
+           padding-right: 30px;
+        }
+        #searchlogo{
+            height: 30px;
+            width: 30px;
+            margin-bottom: 20px;
+            padding: none;
+        }
+        #searchbox{
+            background-color: #3A3C3E;
+            border:none;
+            width: 200px;
+            color: white;
+            font-weight: bold;
+            font-size: large;
+            padding:10px;
+            margin-top: 20px;
+        }
+        .clear{
+            clear: both;
+        }
+        
+        #title{
+           color: #4A4A4A;
+            font-weight: bold;
+            font-size: x-large;
+            float: left;
+            margin-top: 16px;
+            margin-left: 100px;
+        }
+        #date{ color: #8C8C9E;
+            font-weight: bold;
+            font-size: x-large;
+            float: right;
+            margin-right: 100px;
+            margin-top: 16px;
+            opacity: 80%;
+
+        }
+        #pagecontainer{
+            width: 1350px;
+            margin: 0 auto;
+        }
+        #article0{
+            color:#4A4A4A ;
+            border-left: 4px solid #E91802;
+            margin-top: 50px;
+        }
+        #articlecontainer{
+            width: 675px;
+            position: relative;
+            text-align: center;
+            margin: auto;
+        }
+        #i1{
+            height:351px;
+            width:600px;
+            filter: brightness(50%);
+        }
+        h3 a {
+           color:  white;
+            font-size: xx-large;
+            position: absolute;
+            top: 46%;
+            left:24%;
+            opacity: 95%;
+            font-family: ReithSans,Arial,Helvetica,freesans,sans-serif;
+             transform: translate(-50%, -50%);        
+            }
+        h4 a{
+            color:  white;
+            position: absolute;
+            top: 54%;
+            left:25%;
+            opacity: 85%;
+            font-family: ReithSans,Arial,Helvetica,freesans,sans-serif;
+             transform: translate(-50%, -50%);        
+        }
+        p a{
+            color: white;
+            position: absolute;
+            top: 58%;
+            left:7%;
+            border-left: 3px solid #E91802;
+            opacity: 90%;
+        }
+        
+        #la1{
+            height:170px;
+            width: 300px;
+            position: absolute;
+            top: 18%;
+            left:46%;
+            filter: brightness(50%);
+        }
+        #la2{
+            height:170px;
+            width: 300px;
+            position: absolute;
+            top: 18%;
+            left:67%;
+            filter: brightness(50%);
+            
+        }
+        #la3{
+            height:170px;
+            width: 300px;
+            position: absolute;
+            top: 41%;
+            left:46%;
+            filter: brightness(50%);
+        }
+        #la4{
+            height:170px;
+            width: 300px;
+            position: absolute;
+            top: 41%;
+            left:67%;
+            filter: brightness(50%);
+        }
+        #ta1{
+            color:  white;
+            font-size:larger;
+            position: absolute;
+            font-weight: bold;
+            top: 33%;
+            left:55%;
+            opacity: 95%;
+            font-family: ReithSans,Arial,Helvetica,freesans,sans-serif;
+             transform: translate(-50%, -50%);
+
+        }
+        #ta2{
+            color:  white;
+            font-size:larger;
+            position: absolute;
+            font-weight: bold;
+            top: 33%;
+            left:75.5%;
+            opacity: 95%;
+            font-family: ReithSans,Arial,Helvetica,freesans,sans-serif;
+             transform: translate(-50%, -50%);
+        
+        }
+        #ta3{
+            color:  white;
+            font-size:larger;
+            position: absolute;
+            font-weight: bold;
+            top: 55%;
+            left:55.5%;
+            opacity: 95%;
+            font-family: ReithSans,Arial,Helvetica,freesans,sans-serif;
+             transform: translate(-50%, -50%);
+
+        }
+        #ta4{
+            color:  white;
+            font-size:larger;
+            position: absolute;
+            font-weight: bold;
+            top: 55%;
+            left:75%;
+            opacity: 95%;
+            font-family: ReithSans,Arial,Helvetica,freesans,sans-serif;
+             transform: translate(-50%, -50%);
+
+        }        
+        #ua1{
+            color:  white;
+            position: absolute;
+            font-size: small;
+            top: 36.5%;
+            left:46.5%;
+            opacity:90%;
+            border-left: 2px solid #47A1D8;
+            
+        }
+        #ua2{
+            color:  white;
+            position: absolute;
+            font-size: small;
+            top: 36.5%;
+            left:68%;
+            opacity: 90%;
+            border-left: 2px solid #47A1D8;
+           
+        }
+        #ua3{
+            color:  white;
+            position: absolute;
+            font-size: small;
+            top: 58.5%;
+            left:46.5%;
+            opacity: 90%;
+            border-left: 2px solid #47A1D8;
+            
+        }
+        #ua4{
+            color:  white;
+            position: absolute;
+            font-size: small;
+            top: 58.5%;
+            left:68%;
+            opacity: 90%;
+            border-left: 2px solid #47A1D8;
+        }
+
+        #ba1{
+            height:200px;
+            width: 400px;
+            margin-right: 10px;
+        }
+        #ba2{
+            height:200px;
+            width: 400px;
+            margin-right: 10px;
+        }
+        #ba3{
+            height:200px;
+            width: 400px;
+        }
+        #bb1{
+            color: #212121;
+            font-size:larger;
+            font-weight: bolder;
+            position: absolute;
+            top: 107%;
+            left:17%;
+            opacity: 100%;
+            font-family: ReithSans,Arial,Helvetica,freesans,sans-serif;
+             transform: translate(-50%, -50%);        
+        }
+        #bc1{
+            color:#4C4C4C;
+            position: absolute;
+            font-weight: bold;
+            top: 114%;
+            left:16.8%;
+            opacity: 100%;
+            font-family: ReithSans,Arial,Helvetica,freesans,sans-serif;
+             transform: translate(-50%, -50%);        
+        }
+        #bd1{
+            color: #767676;
+            position: absolute;
+            font-size: small;
+            top: 119%;
+            left:5.5%;
+            border-left: 2px solid #E91802;
+        }
+        #bb2{
+            color: #212121;
+            font-size:larger;
+            font-weight: bolder;
+            position: absolute;
+            top: 107%;
+            left:45.3%;
+            opacity: 100%;
+            font-family: ReithSans,Arial,Helvetica,freesans,sans-serif;
+             transform: translate(-50%, -50%);        
+        }
+        #bc2{
+            color:#4C4C4C;
+            position: absolute;
+            font-weight: bold;
+            top: 114%;
+            left:46%;
+            opacity: 100%;
+            font-family: ReithSans,Arial,Helvetica,freesans,sans-serif;
+             transform: translate(-50%, -50%);        
+        }
+        #bd2{
+            color: #767676;
+            position: absolute;
+            font-size: small;
+            top: 119%;
+            left:33%;
+            border-left: 2px solid #E91802;
+        }
+        #bb3{
+            color: #212121;
+            font-size:larger;
+            font-weight: bolder;
+            position: absolute;
+            top: 107%;
+            left:69.3%;
+            opacity: 100%;
+            font-family: ReithSans,Arial,Helvetica,freesans,sans-serif;
+             transform: translate(-50%, -50%);        
+        }
+        #bc3{
+            color:#4C4C4C;
+            position: absolute;
+            font-weight: bold;
+            top: 114%;
+            left:73.3%;
+            opacity: 100%;
+            font-family: ReithSans,Arial,Helvetica,freesans,sans-serif;
+             transform: translate(-50%, -50%);        
+        }
+        #bd3{
+            color: #767676;
+            position: absolute;
+            font-size: small;
+            top: 119%;
+            left:60.5%;
+            border-left: 2px solid #E91802;
+        }
+
+        #article1{
+            color:#4A4A4A ;
+            border-left: 4px solid #FFD930;
+            margin-top: 200px;
+        }
+         #ba4{
+            height:200px;
+            width: 400px;
+            margin-right: 10px;
+        }
+        #ba5{
+            height:200px;
+            width: 400px;
+            margin-right: 10px;
+        }
+        #ba6{
+            height:200px;
+            width: 400px;
+        }
+        #bb4{
+            color: #212121;
+            font-size:larger;
+            font-weight: bolder;
+            position: absolute;
+            top: 164%;
+            left:17%;
+            opacity: 100%;
+            font-family: ReithSans,Arial,Helvetica,freesans,sans-serif;
+             transform: translate(-50%, -50%);        
+        }
+        #bc4{
+            color:#4C4C4C;
+            position: absolute;
+            font-weight: bold;
+            top: 172%;
+            left:17.5%;
+            opacity: 100%;
+            font-family: ReithSans,Arial,Helvetica,freesans,sans-serif;
+             transform: translate(-50%, -50%);        
+        }
+        #bd4{
+            color: #767676;
+            position: absolute;
+            font-size: small;
+            top: 178%;
+            left:5.5%;
+            border-left: 2px solid #FFD930;
+        }
+        #bb5{
+            color: #212121;
+            font-size:larger;
+            font-weight: bolder;
+            position: absolute;
+            top: 164%;
+            left:43.3%;
+            opacity: 100%;
+            font-family: ReithSans,Arial,Helvetica,freesans,sans-serif;
+             transform: translate(-50%, -50%);        
+        }
+        #bc5{
+            color:#4C4C4C;
+            position: absolute;
+            font-weight: bold;
+            top: 172%;
+            left:44.5%;
+            opacity: 100%;
+            font-family: ReithSans,Arial,Helvetica,freesans,sans-serif;
+             transform: translate(-50%, -50%);        
+        }
+        #bd5{
+            color: #767676;
+            position: absolute;
+            font-size: small;
+            top: 178%;
+            left:33%;
+            border-left: 2px solid #FFD930;
+        }
+        #bb6{
+            color: #212121;
+            font-size:larger;
+            font-weight: bolder;
+            position: absolute;
+            top: 164%;
+            left:70.6%;
+            opacity: 100%;
+            font-family: ReithSans,Arial,Helvetica,freesans,sans-serif;
+             transform: translate(-50%, -50%);        
+        }
+        #bc6{
+            color:#4C4C4C;
+            position: absolute;
+            font-weight: bold;
+            top: 172%;
+            left:73.6%;
+            opacity: 100%;
+            font-family: ReithSans,Arial,Helvetica,freesans,sans-serif;
+             transform: translate(-50%, -50%);        
+        }
+        #bd6{
+            color: #767676;
+            position: absolute;
+            font-size: small;
+            top: 178%;
+            left:60.5%;
+            border-left: 2px solid #FFD930;
+        }
+        #weather{
+            color:#4A4A4A ;
+            position: absolute;
+            top: 182%;
+            left:5.3%;
+        }
+        #tree{
+            margin-top: 374px;
+            filter:brightness(50%);
+        }
+        #r{
+            font-size: 50px;
+            color:white;
+            position: absolute;
+            top: 215%;
+            left:5.3%;
+        }
+        #reelbox{
+            border-radius: 20px;
+            border: 2px solid #040404;
+            padding: 20px;
+            width: 135px;
+            height: 5px;
+            font-size: large;
+            position: absolute;
+            top: 215%;
+            left:80.3%;
+            opacity: 80%;
+        }
+        .ra{
+            height:230px;
+            width: 400px;
+            position: absolute;
+            top:230%;
+            margin-right: 10px;
+        }
+        #ra1{
+            left:5.3%;
+        }
+        #ra2{
+            left:33.3%;
+        }
+        #ra3{
+            left:61.3%;
+        }
+
+
+    
+    </style>
+   </head>
+   <body>
+    <div id="topbar">
+        <img id="logo" src="C:\Users\Asus\OneDrive\Desktop\wallpaper\p7xa71mhwd1chcn8fbk1vs8g3xv_thumbnail.png">
+        <div id="signindiv">
+            <img id="signinlogo" src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/login-w-icon.png">
+
+        </div> 
+        <div class="topbarsection topbartext">
+       <a style="text-decoration:none" href="https://www.bbc.com/">Home</a>
+        </div>
+        <div class="topbartext">
+            <a style="text-decoration:none" href="https://www.bbc.com/news">News</a>
+        </div>
+        <div class="topbartext">
+            <a style="text-decoration:none" href="https://www.bbc.com/sport">Sport</a>
+        </div>
+        <div class="topbartext">
+            <a style="text-decoration:none" href="https://www.bbc.com/reel">Reel</a>
+        </div>
+        <div class="topbartext">
+            <a style="text-decoration:none" href="https://www.bbc.com/worklife">Worklife</a>
+        </div>
+        <div class="topbartext">
+            <a style="text-decoration:none" href="https://www.bbc.com/travel">Travel</a>
+        </div>
+        <div class="topbartext">
+            <a style="text-decoration:none" href="https://www.bbc.co.uk/#chameleon-global-navigation-more-menu">...</a>
+        </div>
+        <div class="topbartext">
+            <input id="searchlogo" type="image" src="C:\Users\Asus\OneDrive\Desktop\web d\css\search.png">
+        </div>
+        <div>
+            <input id="searchbox" type="text" placeholder="Search">
+        </div>
+        <div class="clear"></div>
+        </div>
+    </div>
+
+    <div>
+        <h1 id="title">Welcome to BBC.com</h1>
+        <h1 id="date">Sunday, 22 January</h1>    
+    </div>
+
+    <div class="clear"></div>
+    <div id="pagecontainer">
+
+        <div id="article container">
+            <a href="https://www.bbc.com/news/live/world-us-canada-64365251"><img id="i1" src="C:\Users\Asus\OneDrive\Desktop\web d\css\a1.jpg"></a>
+            <h3><a style="text-decoration: none" href="https://www.bbc.com/news/live/world-us-canada-64365251">Ten killed in shooting near LA after<br> Lunar New Year event.</a></h3>
+            <h4><a style="text-decoration: none" href="https://www.bbc.com/news/live/world-us-canada-64365251">At least 10 people have died following a shooting at a business premises<br> in the Californian city of Monterey Park</a></h4>
+            <p><a style="text-decoration: none" href="https://www.bbc.com/news/world/us_and_canada">US & CANADA</a></p>
+            <a href="https://ichef.bbci.co.uk/news/976/cpsprodpb/5561/production/_128375812_d3249e17dfeee7f7ed2fe67ebe428d4c3808a0a10_171_4704_26461000x563.jpg"></a>
+        </div>
+        <div id="article0">
+            <h2>  News</h2>
+        </div>
+        <div id="leftaticle">
+            <a href="https://www.bbc.com/news/world-europe-64380066"><img id="la1" src="C:\Users\Asus\OneDrive\Desktop\web d\css\a2.png"></a>
+            <a id="ta1" style="text-decoration: none" href="https://www.bbc.com/news/world-europe-64380066">Erdogan tells Sweden not to <br>expect Nato bid support</a>
+            <a id="ua1" style="text-decoration: none" href="https://www.bbc.com/news/world/europe">EUROPE</a>
+            
+            <a href="https://www.bbc.com/news/world-us-canada-64381279"><img id="la2" src="C:\Users\Asus\OneDrive\Desktop\web d\css\a3.png"></a>
+            <a id="ta2" style="text-decoration: none" href="https://www.bbc.com/news/world-us-canada-64381279">Rioter who posed feet on<br> Pelosi's desk found guilty</a>
+            <a id="ua2" style="text-decoration: none" href="https://www.bbc.com/news/world/us_and_canada">US</a>
+       
+            <a href="https://www.bbc.com/news/world-asia-india-64327940"><img id="la3" src="C:\Users\Asus\OneDrive\Desktop\web d\css\a4.png"></a>
+            <a id="ta3" style="text-decoration: none" href="https://www.bbc.com/news/world-asia-india-64327940">Eight-year-old Indian diamond <br> heiress who became a nun</a>
+            <a id="ua3" style="text-decoration: none"  href="https://www.bbc.com/news/world/asia/india">INDIA</a>
+        
+            <a href="https://www.bbc.com/culture/article/20230123-8-of-the-worlds-best-forest-homes"><img id="la4" src="C:\Users\Asus\OneDrive\Desktop\web d\css\a5.png"></a>
+            <a id="ta4" style="text-decoration: none" href="https://www.bbc.com/culture/article/20230123-8-of-the-worlds-best-forest-homes">Eight of the world's best<br> forest homes</a>
+            <a id="ua4" style="text-decoration: none" href="https://www.bbc.com/culture">CULTURE</a>
+        </div>
+
+    <div id="bottomarticle1">
+        <a href="https://www.bbc.com/news/world-64381922"><img id="ba1" src="C:\Users\Asus\OneDrive\Desktop\web d\css\b1.png"></a>
+        <a id="bb1" style="text-decoration: none" href="https://www.bbc.com/news/world-64381922">Brazil airlifts starving Yanomami tribal <br>people from jungle</a>
+        <a id="bc1" style="text-decoration: none" href="https://www.bbc.com/news/world-64381922">Brazil airlifted  Yanomami people to treatment,<br> the government declared medical emergency.</a>
+        <a id="bd1" style="text-decoration: none" href="https://www.bbc.com/news/world/us_and_canada">WORLD</a>
+
+        <a href="https://www.bbc.com/news/live/world-asia-64340240"><img id="ba2" src="C:\Users\Asus\OneDrive\Desktop\web d\css\b2.png"></a>
+        <a id="bb2" style="text-decoration: none" href="https://www.bbc.com/news/live/world-asia-64340240">Afghan women share what their lives are <br>really like under the Taliban</a>
+        <a id="bc2" style="text-decoration: none" href="https://www.bbc.com/news/live/world-asia-64340240">Women around the country are sending us updates,<br> describing their lives under Taliban rule.</a>
+        <a id="bd2" style="text-decoration: none" href="https://www.bbc.com/news/world/asia">ASIA</a>
+
+        <a href="https://www.bbc.com/news/world-europe-64383388"><img id="ba3" src="C:\Users\Asus\OneDrive\Desktop\web d\css\b3.png"></a>
+        <a id="bb3" style="text-decoration: none" href="https://www.bbc.com/news/world-europe-64383388">Top Ukrainian officials quit in<br> anti-corruption drive</a>
+        <a id="bc3" style="text-decoration: none" href="https://www.bbc.com/news/live/world-asia-64340240">Several officials have resigned as President begins <br> shake-up of personnel across his government.</a>
+        <a id="bd3" style="text-decoration: none" href="https://www.bbc.com/news/world/europe">EUROPE</a>
+    </div>
+    <div id="article1">
+        <h2>  Sport</h2>
+    </div>
+    <div id="bottomarticle2">
+        <a href="https://www.bbc.com/sport/live/tennis/62997939"><img id="ba4" src="C:\Users\Asus\OneDrive\Desktop\web d\css\b4.png"></a>
+        <a id="bb4" style="text-decoration: none" href="https://www.bbc.com/sport/live/tennis/62997939">Australian Open: Azarenka dominates<br> Pegula to reach semi-finals</a>
+        <a id="bc4" style="text-decoration: none" href="https://www.bbc.com/sport/live/tennis/62997939">Title favourite Jessica Pegula faces champion<br> Victoria Azarenka in the Australian Open quarter<br>-finals-follow live text and radio.</a>
+        <a id="bd4" style="text-decoration: none" href="https://www.bbc.com/sport/tennis">TENNIS</a>
+
+        <a href="https://www.bbc.com/sport/64353402"><img id="ba5" src="C:\Users\Asus\OneDrive\Desktop\web d\css\b5.png"></a>
+        <a id="bb5" style="text-decoration: none" href="https://www.bbc.com/sport/64353402">The Englishman behind Morocco's <br>epic World Cup run</a>
+        <a id="bc5" style="text-decoration: none" href="https://www.bbc.com/sport/64353402">Kingston was part of Liverpool's Champions <br>League and Premier League success. In 2020, <br> swapped it all to work with Morocco.</a>
+        <a id="bd5" style="text-decoration: none" href="https://www.bbc.com/sport/football">FOOTBALL</a>
+
+        <a href="https://www.bbc.com/sport/live/football/64383250"><img id="ba6" src="C:\Users\Asus\OneDrive\Desktop\web d\css\b6.png"></a>
+        <a id="bb6" style="text-decoration: none" href="https://www.bbc.com/sport/live/football/64383250">Football transfers latest & reaction<br> to Kane scoring record</a>
+        <a id="bc6" style="text-decoration: none" href="https://www.bbc.com/sport/live/football/64383250">Reaction to Everton's decision to sack Frank Lampard, plus Harry Kane becomes Tottenham's joint all-time top scorer as Spurs win at Fulham.</a>
+        <a id="bd6" style="text-decoration: none" href="https://www.bbc.com/sport/football">FOOTBALL</a>
+    </div>
+    <div id="weather">
+        <h2> WEATHER</h2>
+        <img src="C:\Users\Asus\OneDrive\Desktop\web development\css\w1.png" height="100px" width="500px">
+    </div>
+
+    </div>
+
+    <div id="reel">
+        <img id="tree" src="C:\Users\Asus\OneDrive\Desktop\web development\css\f.jpg" height="450px" width="2000px">
+        <a id="r"style="text-decoration: none" href="https://www.bbc.com/reel">REEL</a>
+        <h3 style="color:white;position: absolute; top:1720; left: 75;">The most amazing videos from the Monika</h3>
+        <div>
+            <input id="reelbox" type="text" value="Visit Reel->">
+        </div>
+            <div class="ra">
+            <a href="https://www.bbc.com/reel/video/p0dqhjpj/the-surprising-story-of-a-16th-century-rhino-called-ganda"><img id="ra1" src="C:\Users\Asus\OneDrive\Desktop\web development\css\r1.png"></a>
+            <a href="https://www.bbc.com/reel/video/p0dx8h23/the-remote-churches-on-the-edge-of-the-world"><img id="ra2" src="C:\Users\Asus\OneDrive\Desktop\web development\css\r2.png"></a>
+            <a href="https://www.bbc.com/reel/video/p0b5x2z7/is-a-vegan-diet-healthier-than-eating-meat-and-dairy-"><img id="ra3" src="C:\Users\Asus\OneDrive\Desktop\web development\css\r3.png"></a>
+        </div>
+    </div>
+    
+    
+    
+
+
+   </body>
+</html>
